@@ -26,6 +26,15 @@ steps:
   image: alpine
   commands:
   - echo hello publish
+- name: docker  
+  image: plugins/docker
+  settings:
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    repo: ducdung8491/drone-hello
+    tags: latest
 - name: notify
   image: plugins/slack
   settings:
