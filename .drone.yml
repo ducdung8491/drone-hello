@@ -15,3 +15,14 @@ steps:
   when:
     branch:
     - develop
+ 
+---
+kind: pipeline
+type: docker
+name: publish
+
+steps:
+- name: greeting
+  image: alpine
+  commands:
+  - echo hello publish
