@@ -8,3 +8,10 @@ steps:
   commands:
   - echo hello
   - echo world
+- name: build
+  image: alpine
+  commands:
+  - echo Building...
+  when:
+    branch:
+    - develop
