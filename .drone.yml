@@ -35,11 +35,10 @@ steps:
     password:
       from_secret: docker_password
     repo: ducdung8491/drone-hello
-    tags: latest
 - name: notify
   image: plugins/slack
   settings:
     channel: #development
     webhook:
-      from_secret: slack_webhook
+      from_secret: slack_webhook 
     image_url: https://unsplash.it/256/256/?random
