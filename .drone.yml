@@ -28,6 +28,9 @@ steps:
   - echo hello publish
 - name: docker  
   image: plugins/docker
+  commands:
+  - docker service ls
+  - docker ps
   settings:
     auto_tag: true
     username:
