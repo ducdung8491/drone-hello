@@ -30,4 +30,4 @@ steps:
   image: plugins/slack
   settings:
     channel: development
-    webhook: https://hooks.slack.com/services/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
+    webhook: https://hooks.slack.com/services/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
