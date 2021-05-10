@@ -29,5 +29,5 @@ steps:
 - name: notify
   image: plugins/slack
   settings:
-    channel: development
-    webhook: https://hooks.slack.com/services/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
+    channel: #development
+    webhook: https://hooks.slack.com/services/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
