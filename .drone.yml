@@ -26,3 +26,8 @@ steps:
   image: alpine
   commands:
   - echo hello publish
+- name: notify
+  image: plugins/slack
+  settings:
+    channel: development
+    webhook: https://hooks.slack.com/services/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
